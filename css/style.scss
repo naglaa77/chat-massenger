@@ -1,0 +1,229 @@
+*{
+	box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("https://www.psdstack.com/wp-content/uploads/2019/08/copyright-free-images-750x420.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: rgba(70, 67, 67, 0.67);
+    // }
+}
+ul {
+    list-style: none;
+}
+.background {
+    background-color: white;
+    width: 81%;
+    height: 70%;
+    margin: 3em auto;
+    overflow: auto;
+    display: flex;
+    aside {
+        border-right: 1px solid #ebe4e4;
+        padding: 2em;
+        width: 35%;
+        header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5em;
+            input {
+                background-color: #80808021;
+                border-radius: 23px;
+                border: none;
+                padding: 1em;
+                width: 80%;
+                font-size: .8rem;
+                width: 70%;
+                outline: none;
+            }
+            .add-friend {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #167ddf9e;
+                color: white;
+                i {
+                    display: block;
+                    text-align: center;
+                    line-height: 40px;
+                    padding-left: 0.2em;
+                }
+            }
+        }
+        ul {
+            li {
+                border-top: 1px solid #ebe4e4;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: .5em;
+                padding-bottom: .5em;
+                img{
+                    width: 15%;
+                    height: 15%;
+                    border-radius: 50%;
+                }
+                .name-friend{
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    .order-name-time {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        h3 {
+                            width: 70%;
+                            font-size: 1rem;
+                        }
+                        .time {
+                            display: flex;
+                            color: gray;
+                            font-size: 1rem;
+                        }
+                    }
+                    p {
+                        color: gray;
+                        padding-top: 0.2em;
+                    }
+                }
+                
+            }
+        }
+    }
+    main {
+        width: 100%;
+        header {
+            background-color: #80808021;
+            padding: 1em 2em;
+            h3 {
+                font-size: .9rem;
+                color: #8b8989;
+                span {
+                    font-weight: bold;
+                    color: black;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .recent-chat-date {
+            text-align: center;
+            margin-top: 9em;
+            padding: 1em 2em;
+            h5 {
+                position: relative;
+                color: gray;
+                font-size: 1rem;
+                &:after,
+                &::before {
+                    content: '';
+                    width:36%;
+                    height: 2px;
+                    background-color: #80808021;
+                    position: absolute;
+
+                }
+                &:after {
+                    top: 70%;
+                    left: 0;
+                }
+                &::before{
+                    top: 70%;
+                    right: 0;
+                }
+            }
+        }
+        ul {
+            padding: 1em 2em;
+            display: flex;
+            flex-direction: column;
+            li {
+                width: fit-content;
+                height: auto;
+                padding: 0.5em;
+                margin-bottom: .5em;
+                border-radius: 7px;
+                font-size: 1.2rem;
+                &.you {
+                    background-color: #167ddf9e;
+                    color: white;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-top: 5px solid transparent;
+                        border-right: 5px solid #167ddf9e;
+                        border-bottom: 5px solid transparent;
+                        border-left: 5px solid transparent;
+                        position: absolute;
+                        top: 50%;
+                        left: -10px;
+                        transform: translateY(-50%);
+                    }
+                }
+                &.me {
+                    background-color: #cbbfe72e;
+                    color: #423f3f;
+                    align-self: flex-end;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-top: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-bottom: 5px solid transparent;
+                        border-left: 5px solid #cbbfe72e;
+                        position: absolute;
+                        top: 50%;
+                        right: -10px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+        footer {
+            height: 60px;
+            background-color: #cbbfe72e;
+            margin: 0em 2em 1em;
+            box-sizing: border-box;
+            border-radius: 5px;
+            color: grey;
+            .write-msg {
+                padding: 0 1em;
+                line-height: 60px;
+                .filebutton {
+                    i {
+                        cursor: pointer;
+                    }
+                    input {
+                        display: none;
+                    }
+                }
+            }
+            input {
+                border: none;
+                width: 87%;
+                height: auto;
+                background-color: #cbbfe700;
+                margin: 2em 0;
+                outline: none;
+            }
+            .fa.fa-smile-o {
+                margin-right: .6em;
+            }
+        }
+    }
+}
